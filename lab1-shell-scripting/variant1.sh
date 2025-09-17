@@ -5,4 +5,4 @@ if [ $# -ne 2 ]; then
 fi
 directory=$1
 filename=$2
-find "$directory" -type f -name "$filename.*" -exec dirname {} \; | sort
+find "$directory" -type f -name "$filename.*" -exec dirname {} \; | sort -u
